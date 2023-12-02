@@ -1,0 +1,28 @@
+{
+    "rules": {
+        "no-unsafe-finally": "warn",
+        "no-constant-condition": "warn",
+        "no-unreachable": "error",
+        "no-use-before-define": "warn",
+        "valid-typeof": "warn",
+        "max-lines": ["error", 400],
+        "no-empty": "warn",
+        "import/extensions": "off",
+        "no-console": "off"
+    },
+    "overrides": [
+        {
+          "files": ["src/migrations/**"],
+          "rules": {
+            "no-unused-vars": "off"
+          }
+        }
+      ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".json"]
+        }
+      }
+    }
+  }
